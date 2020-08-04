@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+<title>生成短网址 - XEZ短网址</title>
+<meta name="keywords" content="短网址,短网址生成,淘宝短网址,短网址制作,短网址还原,制作短网址,短的网址,缩短网址,dwz,t.cn,url.cn,suo.im">
+<meta name="description" content="XEZ短网址(xez.cc)提供了短网址的生成与统计, 为正规网站提供短网址服务，使淘宝/微信/QQ/短信等平台的推广和规避长的网址提供了条件，同时本站能提供实时的网站访问统计，使你快速上手...">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div id="app">
+	<div class="main-wrapper main-wrapper-1">
+		<div class="navbar-bg">
+		</div>
+		<nav class="navbar navbar-expand-lg main-navbar">
+		<form class="form-inline mr-auto">
+			<ul class="navbar-nav mr-3">
+				<li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+			</ul>
+		</form>
+		<ul class="navbar-nav navbar-right">
+			<li class="dropdown"><span class="badge badge-dark"><b>欢迎使用
+			<div class="bullet">
+			</div>
+			XEZ短网址</b></span>
+			</li>
+		</ul>
+		</nav>
+		<div class="main-sidebar sidebar-style-2">
+			<aside id="sidebar-wrapper">
+			<div class="sidebar-brand">
+				<a href="index.html">XEZ短网址</a>
+			</div>
+			<div class="sidebar-brand sidebar-brand-sm">
+				<a href="index.html">XEZ</a>
+			</div>
+			<ul class="sidebar-menu">
+				<li class="menu-header">短网址</li>
+	            <li class="active"><a class="nav-link" href="index.html"><i class="fas fa-dice-d20"></i> <span>生成短网址</span></a></li>
+	            <li class><a class="nav-link" href="tongji.html"><i class="fas fa-signal"></i> <span>短网址统计</span></a></li>
+				<li class="menu-header">投诉专栏</li>
+				<li class><a class="nav-link" href="feedback.html"><i class="fas fa-unlink"></i> <span>举报违规链接</span></a></li>
+				<li class="menu-header">群聊推荐</li>
+            	<li><a class="nav-link" href="https://qm.qq.com/cgi-bin/qm/qr?k=RMUjXmXucQ8GxdeU4S6AA4hEQ_n3Dq1z" target="_blank"><i class="fas fa-users"></i> <span>加入官方群聊</span></a></li>
+            	<li class="menu-header">关于</li>
+            	<li class><a class="nav-link" href="about.html"><i class="fas fa-grin-squint"></i> <span>关于本站</span></a></li>
+			</ul>
+			</aside>
+		</div>
+		<!--主要内容-->
+		<div class="main-content">
+			<section class="section">
+			<div class="section-header">
+				<i class="fas fa-bullhorn"></i>&nbsp;本短网址严禁给任何违反国家法律的网站使用！			</div>
+			<div class="section-body">
+				<!--主体内容开始-->
+				<h2 class="section-title">生成短网址</h2><div class="row">
+	<div class="col-12 col-md-7">
+		<!--页面自定义卡片开始-->
+		<div class="card card-primary">
+			<div class="card-header text-primary">
+				<h4>生成短网址</h4>
+			</div>
+			<div class="card-body">
+				<div class="form-group floating-addon">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								<i class="fas fa-link"></i>
+							</div>
+						</div>
+						<input id="link" type="url" placeholder="请输入长网址" class="form-control" maxlength="220" value="http://">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group" id="input-wrap">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								<i class="fas fa-fingerprint"></i>
+							</div>
+						</div>
+						<input id="randshort" data-toggle="tooltip" data-placement="top" title data-original-title="仅限字母,数字,以及'_'符号 最长8位" placeholder="短网址后缀" type="text" class="form-control" maxlength="8">
+						<div class="input-group-append">
+							<button class="btn btn-primary" type="button" id="randbutton">随机生成</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-5">
+						<label class="custom-switch" style="margin-top:11px;margin-bottom:11px"><input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" id="display"><span class="custom-switch-indicator"></span><span class="custom-switch-description">访问密码</span></label>
+					</div>
+					<div class="form-group col-7" style="display:none" id="pwdset">
+						<div class="input-group">
+							<input type="text" class="form-control" data-toggle="tooltip" data-placement="top" title data-original-title="仅限字母,数字,以及'_'符号 最长20位" id="pwd" placeholder="访问密码设置" maxlength="20">
+							<div class="input-group-append">
+								<div class="input-group-text">
+									<li class="fas fa-compass"></li>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<button type="submit" id="gobtn" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#Modal">生成</button>
+				</div>
+			</div>
+			<script></script>
+		</div>
+		<!--页面自定义卡片结束-->
+	</div>
+	<!--分页开始-->
+	<div class="col-12 col-md-5">
+	<!--分页结束在脚部-->
+	<!--右边卡片自定义开始-->
+		<div class="card" id="result_panel">
+			<div class="card-header text-primary">
+				<h4>生成结果</h4>
+			</div>
+			<div class="card-body" id="result">
+				<div class="alert alert-info" style="background-image: url('favicon.ico');">
+					<li class="fas fa-exclamation-triangle"></li>
+					<b>等待生成...</b>你的短网址生成结果在这哦~
+				</div>
+			</div>
+		</div>
+	<!--右边卡片自定义结束-->
+						<div class="card">
+							<div class="card-header">
+								<h4>友情链接</h4>
+							</div>
+							<div class="card-body">
+								<a href="https://bazhan.me" target="_blank">在线扒站</a><div class="bullet"></div><a href="https://tool.lu" target="_blank">在线工具</a>							</div>
+						</div>
+					</div>
+				</div>
+				<!--主体内容结束-->
+			</div>
+			</section>
+		</div>
+		<!--验证码开始-->
+		<div class="modal fade" tabindex="-1" role="dialog" id="Modal" style="display: none;" aria-hidden="true">
+			<div class="modal-dialog modal-md modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">请输入验证码</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">
+						<li class="fas fa-times"></li>
+						</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="form-group col-6">
+								<label for="authcode">验证码</label>
+								<div class="input-group" id="input-wrap">
+									<input id="authcode" type="text" class="form-control" maxlength="4">
+								</div>
+							</div>
+							<div class="form-group col-6" id="verify_change">
+								<label>点击切换</label><br>
+								<span class="badge badge-light">
+								<img id="verifycode" src="images/verifycode.gif">
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer bg-whitesmoke br">
+						<button type="button" class="btn btn-primary" id="go">GO</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--验证码结束-->
+		<footer class="main-footer">
+		<div class="footer-left">
+          Copyright &copy; 2020 XEZ短网址
+			<div class="bullet">
+			</div>
+			<a href="http://www.beian.miit.gov.cn/" rel="bookmark">赣ICP备18002847号-6</a>
+		</div>
+		<div class="footer-right">
+		</div>
+		</footer>
+	</div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
